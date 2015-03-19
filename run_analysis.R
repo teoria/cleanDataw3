@@ -1,6 +1,6 @@
 library(dplyr)
 
-# Load data sets and marge
+# Load data sets and merge
 colunas  <- read.table(file = "./UCI HAR Dataset/features.txt")
 activity_labels  <- read.table(file = "./UCI HAR Dataset/activity_labels.txt")
 
