@@ -50,8 +50,8 @@ colunasB <- grepl("mean\\(\\)|std\\(\\)" , colunas$V2 );
 
 dados <- dat[ ,colunasB ]
 
-names(dados)[80] <- "activity"
-names(dados)[81] <- "subject"
+names(dados)[dim(dados)[2]-1] <- "activity"
+names(dados)[dim(dados)[2]] <- "subject"
  
 # merge activity labels
 tidyDat <- merge(dados,activity_labels, by.x = "activity" , by.y = "V1", all=T)
