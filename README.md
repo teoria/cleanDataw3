@@ -18,7 +18,7 @@ output: html_document
 
 
 ```{r , eval=FALSE}
-summarise_each
+
 library(dplyr)
 
 # Load data sets and merge
