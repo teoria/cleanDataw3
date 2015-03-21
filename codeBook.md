@@ -74,7 +74,7 @@ The set of variables that were estimated from these signals are:
 ---
 
 #List of Variables
-|x                            |
+|Names                            |
 |:----------------------------|
 |tBodyAcc-mean()-X            |
 |tBodyAcc-mean()-Y            |
