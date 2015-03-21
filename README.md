@@ -5,10 +5,20 @@ date: "March 19, 2015"
 output: html_document
 ---
 
-# Getting and Cleaning Data
+# Getting and Cleaning Data - w3 Project
+
+---
+
+# Objective:
+- Merge train and test data
+- Keep mean,std columns and remove others
+- Merge activity_labels data to get labels to activity column
+- Group data by activity and subject
+- Save the result
+
 
 ```{r , eval=FALSE}
-
+summarise_each
 library(dplyr)
 
 # Load data sets and merge
@@ -36,7 +46,7 @@ names(dat) <- colunas$V2
 
 
 # subset only mean or std columns
-colunasB <- grepl("(mean())|(std())" , colunas$V2 );
+colunasB <- grepl("mean\\(\\)|std\\(\\)" , colunas$V2 );
 
 dados <- dat[ ,colunasB ]
 
