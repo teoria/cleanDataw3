@@ -9,7 +9,7 @@ output: html_document
 
 ---
 
-# Objective:
+# Objectives:
 - Merge train and test data
 - Keep mean,std columns and remove others
 - Merge activity_labels data to get labels to activity column
